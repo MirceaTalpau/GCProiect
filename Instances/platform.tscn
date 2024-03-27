@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://drn1otu2d342n"]
+
+[ext_resource type="Texture2D" uid="uid://dotx1lk0xsyus" path="res://assets/tile.png" id="1_blqbm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d8pt1"]
+size = Vector2(104, 4)
+
+[node name="Platform" type="StaticBody2D" groups=["Paddles"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 10)
+texture = ExtResource("1_blqbm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_d8pt1")
